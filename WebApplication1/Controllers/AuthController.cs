@@ -71,16 +71,16 @@ public class AuthController : ControllerBase
     [Route("/auth/login")]
     public async Task<string> LoginUser(LoginUserInput input)
     {
-        var user = await _context.Users.FirstOrDefaultAsync(x => x.Email == input.Email && x.Password == input.Password);
-        if (user == null)
-        {
-            throw new Exception("sai mm rooi") ;
-        }
+        // var user = await _context.Users.FirstOrDefaultAsync(x => x.Email == input.Email && x.Password == input.Password);
+        // if (user == null)
+        // {
+        //     throw new Exception("sai mm rooi") ;
+        // }
         var claims = new[]
         {
             new Claim(ClaimTypes.Email, "phu@gmail.com"),
             new Claim(ClaimTypes.Name, "Phu"),
-            new Claim("uid", user.Id.ToString()), 
+            new Claim("uid", Guid.NewGuid().ToString()), 
             new Claim("permissions", "SUPPERADMIN")
         };
         var tokenHandler = new JwtSecurityTokenHandler();
