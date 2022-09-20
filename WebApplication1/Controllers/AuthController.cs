@@ -76,6 +76,7 @@ public class AuthController : ControllerBase
         // {
         //     throw new Exception("sai mm rooi") ;
         // }
+        /// hilelloo
         var claims = new[]
         {
             new Claim(ClaimTypes.Email, "phu@gmail.com"),
