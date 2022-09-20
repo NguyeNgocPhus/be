@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "heSZV0mXVCBoC7am9+RXO3O6EulBcNeHSjIP2EEwLBMR3k2L8y/jQCjFaNkyXm99Tn53vW/eTglpEc45SMH7rQ==",
+  "success": true,
+  "projectFilePath": "D:\\C#\\WebApplication1\\Domain\\Domain.csproj",
+  "expectedPackageFiles": [
+    "D:\\.nuge\\google.protobuf\\3.21.2\\google.protobuf.3.21.2.nupkg.sha512"
+  ],
+  "logs": []
+}
